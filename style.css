@@ -1,0 +1,202 @@
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ********menu container***************** */
+
+.menu_container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.menu_container>* {
+    height: 80%;
+    width: 20%;
+    border-right: 2px solid;
+}
+
+.formatting_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.active-btn {
+    background-color: rgb(110, 104, 104);
+}
+
+/* inline input /select */
+
+.subgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45%;
+    height: 100%;
+}
+
+.subgroup>* {
+    width: 100%;
+}
+
+.BUI_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.BUI_container>* {
+    width: 30%;
+}
+
+.color_container>* {
+    width: 45%;
+}
+
+.color_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.alignment_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alignment_container>* {
+    width: 20%;
+}
+
+/* **********formula containter******* */
+
+.formula_container {
+    height: 30px;
+    background-color: rgb(157, 181, 189);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.address_box {
+    width: 10%;
+}
+
+.sapartor {
+    width: 2%;
+}
+
+.formula_box {
+    width: 80%;
+}
+
+/* *************** sheet container ******************* */
+.sheets {
+    background-color: lightgrey;
+    height: 30px;
+    display: flex;
+}
+
+.add-sheet_container {
+    height: 100%;
+    min-width: 30px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 1.2rem;
+    color: lightgreen;
+}
+
+.sheets_list {
+    /* width: calc(100vw - 30px); */
+    overflow-x: auto;
+    /* overflow-y: hidden; */
+    display: flex;
+    height: 100%;
+}
+
+.sheets_list::-webkit-scrollbar {
+    display: none;
+}
+
+.sheet {
+    min-width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active_sheet {
+    background-color: white;
+}
+
+/* ********************** grid container ********************** */
+
+.top-left-block {
+    height: 30px;
+    width: 25px;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.top-row {
+    height: 30px;
+    background-color: #dfe4ea;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    z-index: 90;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    min-width: 80px;
+    max-width: 80px;
+    border: 1px solid;
+    min-height: 30px;
+}
+
+.left-col {
+    width: 25px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 90;
+    /* border: 1px solid red; */
+}
+
+.grid {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+
+.left-col_box {
+    height: 30px;
+    background-color: #dcdde1;
+    text-align: center;
+    border: 1px solid;
+}
+
+.grid_container {
+    height: calc(100vh - ( 80px + 30px + 40px));
+    overflow: auto;
+    position: relative;
+}

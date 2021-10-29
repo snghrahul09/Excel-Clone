@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Excel clone</title>
+</head>
+
+<body>
+    <div class="menu_container">
+        <div class="formatting_container">
+            <div class="subgroup">
+                <select class="font-family">
+                    <option value="calibri">Calibri</option>
+                    <option value="camberia">Camberia</option>
+                    <option value="camberia">Camberia Math</option>
+                    <option value="arial">Arial</option>
+                    <option value="arial">Arial Black</option>
+                  </select>
+                  <div class="BUI_container">
+                      <input type="button" value="B" class = "bold">
+                      <input type="button" value="I" class = "italic">
+                      <input type="button" value="U" class = "underline">
+                  </div>
+            </div>
+            <div class="subgroup">
+                <select class="font_size">
+                  <option value="10">10</option>
+                  <option value="12">12</option>
+                  <option value="16">16</option>
+                  <option value="32">32</option>
+                  <option value="64">64</option>
+                  <option value="72">72</option>
+                  <option value="88">88</option>
+                </select>
+
+                <div class="color_container">
+                    <input type="color" name="" id="">
+                    <input type="color" name="" id="">
+                </div>
+            </div>
+        </div>
+        <div class="alignment_container">
+            <input type="button" value="L" class = "left">
+            <input type="button" value="C" class = "center">
+            <input type="button" value="R" class = "right">
+        </div>
+        <div class="newOpenSave">
+            <i class="far fa-envelope-open open_file"></i>
+            <i class="fas fa-file new"></i>
+            <i class="far fa-save save"></i>
+            <i class="fas fa-download download"></i>
+
+        </div>
+    </div>
+    <div class="formula_container">
+        <input type="text" class="address_box">
+        <div class="sapartor">:</div>
+        <input type="text" class="formula_box">
+    </div>
+    <div class="grid_container">
+        <div class="top-left-block">
+        </div>
+        <div class="top-row">
+        </div>
+        <div class="left-col">
+        </div>
+        <div class="grid"></div>
+    </div>
+    <div class="sheets">
+        <div class="add-sheet_container">
+            <i class="fas fa-plus icon"></i>
+        </div>
+        <div class="sheets_list">
+            <div class="sheet active_sheet " SheetIdx="1">Sheet 1</div>
+        </div>
+    </div>
+    <script src="init.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="newOpenSave.js" defer></script>
+</body>
+
+</html>
